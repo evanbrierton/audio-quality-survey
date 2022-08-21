@@ -25,21 +25,6 @@ const FormContainer = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       {renderForm()}
-      {/* {window?.innerWidth > 768 ? (
-      <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
-        <Paper
-          variant="outlined"
-          sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}
-        >
-          <Typography component="h1" variant="h2" align="center">
-            Audio Quality Survey
-          </Typography>
-          <Form />
-        </Paper>
-      </Container>
-    ) : (
-      <Form />
-    )} */}
     </ThemeProvider>
   );
 };
