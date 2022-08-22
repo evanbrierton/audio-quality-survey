@@ -1,14 +1,16 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
-initializeApp({
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
-});
+const firebaseConfig = {
+  apiKey: 'AIzaSyB-42fPtrT_lwEh6XADtbbTlrfSLtCMlcY',
+  authDomain: 'audio-quality-survey.firebaseapp.com',
+  projectId: 'audio-quality-survey',
+  storageBucket: 'audio-quality-survey.appspot.com',
+  messagingSenderId: '240310143641',
+  appId: '1:240310143641:web:968706ddde3d14e9818608',
+  measurementId: 'G-H38XKP5JTP',
+};
+
+initializeApp(firebaseConfig);
 
 export const firestore = getFirestore();
